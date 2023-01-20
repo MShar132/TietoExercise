@@ -24,7 +24,7 @@ namespace SortAndReverse.BusinessLogic.Utils
             {
                 reverse[i] = words[j];
                 finalReverse[i] = new char[words[j].Length];
-                for (int count = 0; count < finalReverse.Length - 1 && words[j].Length - 1 - count >= 0; count++)
+                for (int count = 0; count < finalReverse[i].Length && words[j].Length - 1 - count >= 0; count++)
                 {
                     finalReverse[i][count] = words[j][words[j].Length - 1 - count];
                 }
